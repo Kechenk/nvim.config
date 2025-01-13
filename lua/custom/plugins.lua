@@ -7,7 +7,7 @@ local plugins = {
     end
   },
 
-  {
+ {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -16,7 +16,20 @@ local plugins = {
         "tailwindcss-language-server"
       }
     }
-  }
+	},
+
+  {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    },
+    config = function ()
+      require("nvim-ts-autotag").setup()
+    end
+  },
 }
 
 return plugins

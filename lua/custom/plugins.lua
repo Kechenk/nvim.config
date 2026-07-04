@@ -13,7 +13,8 @@ local plugins = {
       ensure_installed = {
         "eslint-lsp",
         "typescript-language-server",
-        "tailwindcss-language-server"
+        "tailwindcss-language-server",
+        "nixd"
       }
     }
 	},
